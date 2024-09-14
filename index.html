@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Portafolio Digital</title>
+</head>
+<body>
+    <header>
+        <h1>Juan Manuel Rivera Restrepo</h1>
+        <h2>Mi Portafolio Digital</h2>
+        <p>Soy un joven estudiante con grandes esperanzas sobre el futuro</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="sobremi.html">Sobre mí</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="http://localhost:3002/api/portafolio" method="POST"></form>
+                <label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" required>
+                <label for="email">Email:</label> <input type="email" name="email" id="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Sígueme en <a href="https://www.instagram.com/juan.rivera.24/">Instagram</a></p>
+    </footer>
+</body>
+</html>
